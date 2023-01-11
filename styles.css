@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Dosis', sans-serif;
+  font-size: 16px;
+}
+
+main {
+  background-image: linear-gradient(109.6deg,#3ea1db 11.2%,#5d34ec 100.2%);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.mainCard {
+  width: 40vw;
+  border-radius: 25px;
+  background-image: linear-gradient(135deg,#fff 70%,#ecebeb);
+  padding: 25px;
+}
+
+.title {
+  font-family: 'Dosis', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 15px;
+}
+
+.inputForm {
+  border-radius: 5px;
+  padding: 8px 10px;
+  border: 1px solid #cfcfcf;
+  outline: none;
+  width: 45%;
+}
+
+.inputForm:focus {
+  box-shadow: 0 0 5px #0044ff;
+}
+
+.inputDatetime{
+  width: 30%;
+  padding: 0 5px;
+  height: 36px;
+  border: 1px solid #cfcfcf;
+  border-radius: 5px;
+  outline: none;
+}
+
+.inputDatetime:focus {
+  box-shadow: 0 0 5px #0044ff;
+}
+
+.btnCreate {
+  padding: 10px;
+  margin: 10px 0;
+  background-image: linear-gradient(109.6deg,#3ea1db 11.2%,#5d34ec 100.2%);
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cardsList {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  overflow-y: scroll;
+  max-height: 60vh;
+  height: 60vh;
+  padding: 0 10px;
+}
+
+.dateCard{
+  padding: 0 15px;
+}
+
+.card {
+  width: 90%;
+  padding: 15px;
+  box-shadow: 2px 4px 4px 4px rgba(71, 71, 71, 0.16);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  margin: 5px 0px;
+  position: relative;
+}
+
+.task {
+  padding: 10px;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.icon:hover {
+  color: rgba(62, 161, 219, 1);
+}
+
+.completeIcon {
+  color: rgba(62, 161, 219, 1);
+}
+
+.trashIcon:hover {
+  color: #f00;
+}
+
+.deleteConfirmationPop {
+  position: relative;
+  background-color: rgba(255, 255, 255);
+  z-index: 99;
+  width: 100%;
+  top: -100px;
+  left: 0; 
+}
+.deleteSpace {
+  position: relative;
+  width: 30%;
+}
+
+.noTasks {
+  font-size: 48px;
+}
+
+/*RESPONSIVE*/
+
+@media screen and (max-width:870px){
+  .mainCard{
+    height: 90vh;
+  }
+
+  form{
+    flex-direction: column;
+  }
+
+  .inputForm, .inputDatetime{
+    width: 60%;
+  }
+  
+  .inputDatetime{
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width:600px){
+  .mainCard{
+    width: 80%;
+  }
+}
+
+
