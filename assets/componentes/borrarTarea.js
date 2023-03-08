@@ -20,7 +20,7 @@ export const borrarTarea = ()=>{
             cancelButtonColor: '#d33',
             confirmButtonText: 'Si, borrar',
             cancelButtonText: 'Cancelar',
-            width: 350
+            width: 300
           }).then((result) => {
             if (result.isConfirmed) {
               li.remove()
